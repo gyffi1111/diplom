@@ -1,0 +1,162 @@
+[
+	{
+		"id": 1,
+		"title": "Honor 10 Lite 3GB/32GB HRX-LX1 (небесный голубой)",
+		"company": "Huawei",
+		"image": "https://content2.onliner.by/catalog/device/header/a74788a2592878496c6ccf1698961925.jpeg",
+		"price": 499,
+		"rating": 3
+	},
+	{
+		"id": 2,
+		"title": "Xiaomi Mi Mix 3 6GB/128G международная версия (черный)",
+		"company": "Xiaomi",
+		"image": "https://content2.onliner.by/catalog/device/header/7b809895488980811292228b9885292c.jpeg",
+		"price": 1335,
+		"rating": 5
+	},
+	{
+		"id": 3,
+		"title": "Huawei P20 Lite ANE-LX1 (полночный черный)",
+		"company": "Huawei",
+		"image": "https://content2.onliner.by/catalog/device/header/375bf1e3be111c4f77ccd54d749bbe81.jpeg",
+		"price": 570,
+		"rating": 4
+	},
+	{
+		"id": 4,
+		"title": "Смартфон Samsung Galaxy S8 Dual SIM 64GB (черный бриллиант) [G950FD]",
+		"company": "Samsung",
+		"image": "https://content2.onliner.by/catalog/device/header/272d80e5c1b51824c5034a0dffb29254.jpeg",
+		"price": 1030,
+		"rating": 4
+	},
+	{
+		"id": 5,
+		"title": "Смартфон Huawei Mate 20 Lite SNE-LX1 (черный)",
+		"company": "Huawei",
+		"image": "https://content2.onliner.by/catalog/device/header/60796d90fb30aeacf0a5306af80f7d13.jpeg",
+		"price": 649,
+		"rating": 4
+	},
+	{
+		"id": 6,
+		"title": "Смартфон Apple iPhone 7 32GB Black",
+		"company": "Apple",
+		"image": "https://content2.onliner.by/catalog/device/header/0ab0b43eb38b5767ea29c4509f0a9d3b.jpeg",
+		"price": 1156,
+		"rating": 4
+	},
+	{
+		"id": 7,
+		"title": "Смартфон Samsung Galaxy A8 Dual SIM (черный)",
+		"company": "Samsung",
+		"image": "https://content2.onliner.by/catalog/device/header/1af2d0ccb5ea38257ac6ea30af3fb712.jpeg",
+		"price": 650,
+		"rating": 4
+	},
+	{
+		"id": 8,
+		"title": "Смартфон Xiaomi Redmi 5A MCG3B международная версия (серый)",
+		"company": "Xiaomi",
+		"image": "https://content2.onliner.by/catalog/device/header/7978658811de23c2781159727e72fbf8.jpeg",
+		"price": 236,
+		"rating": 3
+	},
+	{
+		"id": 9,
+		"title": "Смартфон Nokia 6.1 Plus 4GB/64GB (синий)",
+		"company": "Nokia",
+		"image": "https://content2.onliner.by/catalog/device/header/f39414f153ec72db91bf09eb285c607d.jpeg",
+		"price": 590,
+		"rating": 4
+	},
+	{
+		"id": 10,
+		"title": "Смартфон Apple iPhone XS 64GB (серый космос)",
+		"company": "Apple",
+		"image": "https://content2.onliner.by/catalog/device/header/4859c8c144982b85f415595dd29c505b.jpeg",
+		"price": 2540,
+		"rating": 4
+	},
+	{
+		"id": 11,
+		"title": "Sony Xperia XZ1 Compact (черный)",
+		"company": "Sony",
+		"image": "https://content2.onliner.by/catalog/device/header/b3260e2e82ec1f910db41e827b30a09a.jpeg",
+		"price": 669,
+		"rating": 5
+	},
+	{
+		"id": 12,
+		"title": "MEIZU M8c 16GB (черный)",
+		"company": "MEIZU",
+		"image": "https://content2.onliner.by/catalog/device/header/881404e5eb0901c95e84855cfa117963.jpeg",
+		"price": 216,
+		"rating": 4
+	},
+	{
+		"id": 13,
+		"title": "Смартфон ASUS ZenFone Max Pro (M2) 4GB/64GB ZB631KL (серый)",
+		"company": "ASUS",
+		"image": "https://content2.onliner.by/catalog/device/header/9c96e72ba53ded3d1d1c4fafdfb17392.jpeg",
+		"price": 554,
+		"rating": 5
+	},
+	{
+		"id": 14,
+		"title": "Смартфон Blackview BV9600 Pro (серый)",
+		"company": "Blackview",
+		"image": "https://content2.onliner.by/catalog/device/header/f433c77285827fdccdc6cd40821af886.jpeg",
+		"price": 980,
+		"rating": 4
+	},
+	{
+		"id": 15,
+		"title": "Смартфон Blackview P10000 Pro (зеркальный серебристый)",
+		"company": "Blackview",
+		"image": "https://content2.onliner.by/catalog/device/header/008ff3b96a7415277672b2703ac7a3a1.jpeg",
+		"price": 660,
+		"rating": 5
+	},
+	{
+		"id": 16,
+		"title": "MEIZU 16th 6GB/64GB (черный)",
+		"company": "MEIZU",
+		"image": "https://content2.onliner.by/catalog/device/header/e1d3ce8f04a4426f9d8f8fead496697a.jpeg",
+		"price": 973,
+		"rating": 5
+	},
+	{
+		"id": 17,
+		"title": "Смартфон MEIZU M6 Note 3GB/16GB (черный)",
+		"company": "MEIZU",
+		"image": "https://content2.onliner.by/catalog/device/header/dd203e021a1422de89027af62dba564b.jpeg",
+		"price": 299,
+		"rating": 4
+	},
+	{
+		"id": 18,
+		"title": "Смартфон ASUS ROG Phone 8GB/128GB ZS600KL (черный)",
+		"company": "ASUS",
+		"image": "https://content2.onliner.by/catalog/device/header/a358bb6704df0f438e7f92998266a637.jpeg",
+		"price": 2000,
+		"rating": 4
+	},
+	{
+		"id": 19,
+		"title": "Смартфон ASUS ZenFone Live (L1) 1GB/16GB G552KL (золотистый)",
+		"company": "ASUS",
+		"image": "https://content2.onliner.by/catalog/device/header/7f68112dbb30ad4ec3679d3fc298c76a.jpeg",
+		"price": 247,
+		"rating": 4
+	},
+	{
+		"id": 20,
+		"title": "Смартфон Apple iPhone SE 32GB Space Gray",
+		"company": "Apple",
+		"image": "https://content2.onliner.by/catalog/device/header/adf7acf4dc40fd3fc95908f6d8d0f35f.jpeg",
+		"price": 670,
+		"rating": 5
+	}
+]
