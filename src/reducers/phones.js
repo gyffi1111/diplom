@@ -1,6 +1,10 @@
 const initState = {
     isLoading: false,
-    items: null
+    items: [],
+    isAddPhone: false,
+    setLoading: false,
+    filterBy: 'all',
+    searchQuery: ''
 };
 
 export default (state = initState, action) => {
@@ -11,10 +15,25 @@ export default (state = initState, action) => {
                 items: action.payload,
                 isLoading: true
             };
-        case 'SET_IS_LOADING':
+        case 'SET_FILTER':
             return {
                 ...state,
-                isLoading: action.payload
+                filterBy: action.payload,
+            };
+        case 'SET_QUERY':
+            return {
+                ...state,
+                searchQuery: action.payload,
+            };
+        case 'SET_STATUS_CREATE_PHONE':
+            return {
+                ...state,
+                isAddPhone: action.payload
+            };
+        case 'SET_IS_LOADING_LIST':
+            return {
+                ...state,
+                setLoading: action.payload
             };
         default:
             return state;
