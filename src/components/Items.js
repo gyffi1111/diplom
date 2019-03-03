@@ -53,7 +53,7 @@ class Items extends Component
 
         return (
             <Container>
-                <Grid>
+                <Grid className="item-lists">
                     <Grid.Row>
                         <Grid.Column width={12}>
                             <CardGroup className="list-item" itemsPerRow={3}>

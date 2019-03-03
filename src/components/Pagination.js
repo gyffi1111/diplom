@@ -39,7 +39,7 @@ class Pagination extends Component
 
     getPager(totalItems, currentPage, pageSize) {
         currentPage = currentPage || 1;
-        pageSize = pageSize || 10;
+        pageSize = pageSize || 50;
         let totalPages = Math.ceil(totalItems / pageSize);
         let startPage, endPage;
 

@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import EditForm from './EditForm';
 
 class EditItem extends Component
@@ -9,7 +9,7 @@ class EditItem extends Component
 
         let item = isLoading ? phones.filter((value) => {
             return value.id === Number(this.props.match.params.id);
-        }) : null;
+        }) : null
 
         return (
             <Fragment>

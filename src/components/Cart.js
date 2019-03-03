@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import { List, Button, Image } from "semantic-ui-react";
 import { removeFromCart } from "../actions/cart";
 
@@ -11,9 +11,9 @@ class Cart extends Component
         removeFromCart(id);
     };
 
-
     render() {
-        const item = this.props;
+
+        const item = this.props
 
         return (
             <List selection divided verticalAlign="middle">

@@ -35,3 +35,62 @@ button {
     background: transparent;
     padding: 0;
 }
+.item-list .ui.image {
+    max-width: 200px;
+    display: inline-block;
+}
+.item-list-image {
+    text-align: center;
+}
+
+#root .ui.fluid.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+@media (max-width: 767px) {
+    #root .ui.three.cards>.card {
+        width: calc(50% - 2em);
+    }
+    #root .ui.grid>.row>[class*="twelve wide"].column {
+        width: 69% !important;
+    }
+    #root .ui.grid>.row>[class*="four wide"].column {
+        width: 31% !important;
+    }
+}
+@media (max-width: 500px) {
+    .item-lists.ui.grid>.row {
+        flex-direction: column-reverse;
+    }
+    #root .ui.three.cards>.card {
+        width: calc(100% - 2em);
+    }
+    #root .ui.grid>.row>[class*="twelve wide"].column, #root .ui.grid>.row>[class*="four wide"].column {
+        width: 100% !important;
+    }
+    #root .item-lists .ui.vertical.menu {
+        width: 100%;
+        margin-bottom: .875em;
+    }
+    #root .ui.menu .ui.dropdown .menu>.item a {
+        margin: 0;
+        text-align: left;
+        font-size: 1em!important;
+        padding: .78571429em 1.14285714em!important;
+        background: 0 0!important;
+        color: rgba(0,0,0,.87)!important;
+        text-transform: none!important;
+        font-weight: 400!important;
+        box-shadow: none!important;
+        -webkit-transition: none!important;
+        transition: none!important;
+    }
+    .admin-list-item tfoot {
+        position: relative;
+    }
+    .admin-list-item tfoot button {
+        position: absolute !important;
+        top: 4px;
+        right: 4px;
+    }
+}

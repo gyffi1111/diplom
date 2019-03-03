@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Redirect} from "react-router-dom";
 import {Container, Header, Form as FormUI, Button} from "semantic-ui-react";
-import connect from "react-redux/es/connect/connect";
+import { connect } from "react-redux";
 import {setPhones} from "../../actions/phones";
 
 class EditForm extends Component
@@ -17,8 +17,7 @@ class EditForm extends Component
         ],
         statusSaveBtn: true,
         redirect: false
-    };
-
+    }
     fieldChange = (e, k = null) => {
         let keyItem = e.target.name;
         let valueItem = e.target.value;

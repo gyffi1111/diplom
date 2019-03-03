@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import connect from "react-redux/es/connect/connect";
-import { Card, Icon, Image, Button } from 'semantic-ui-react';
-import { addToCart, removeFromCart } from '../actions/cart';
+import { connect } from "react-redux";
+import './../animate.min.css';
+import {Card, Icon, Image, Button, Rating} from 'semantic-ui-react';
+import { addToCart } from '../actions/cart';
 
 class Item extends Component
 {
@@ -14,20 +15,20 @@ class Item extends Component
         const item = this.props.item;
 
         return (
-            <Card>
-                <Image src={ item.image } />
+            <Card className="animated zoomIn item-list" >
+                <div className="item-list-image">
+                    <Image src={ item.image } />
+                </div>
                 <Card.Content>
                     <Card.Header>{ item.title }</Card.Header>
                     <Card.Meta>
                         <span className='date'>{ item.company }</span>
                     </Card.Meta>
-                    <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                    <a>
-                        <Icon name='ruble' />
-                        { item.price }
-                    </a>
+                    <Icon name='ruble' /> { item.price }
+                    <br />
+                    <Rating defaultRating={item.rating} maxRating={5} disabled />
                 </Card.Content>
 
                 <Button onClick={this.addToCart.bind(this, item)}>Добавить в корзину</Button>
