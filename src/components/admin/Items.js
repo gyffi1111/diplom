@@ -40,11 +40,7 @@ class Items extends Component
 
         const { phones } = this.props;
         let items = phones.filter((v) => {
-            if (v.id === id) {
-                return false;
-            } else {
-                return true
-            }
+            return v.id !== id;
         });
 
         const { setPhones } = this.props;
@@ -63,9 +59,10 @@ class Items extends Component
             </Segment>
             : null;
 
+        console.log(isLoading);
         let items = isLoading ? this.state.pageOfItems.map((value) => {
             return (value.id ?
-                <Table.Row key={value.id}>
+                <Table.Row key={value.id} className="testPhoneRender">
                     <Table.Cell>
                         <Reveal animated='move right'>
                             <Reveal.Content visible>
@@ -81,7 +78,7 @@ class Items extends Component
                     <Table.Cell>{value.price}</Table.Cell>
                     <Table.Cell>{value.rating}</Table.Cell>
                     <Table.Cell>
-                        <NavLink to={"/item/edit/" + value.id} activeClassName="SActivated">
+                        <NavLink to={"/item/edit/" + value.id} activeClassName="SActivated" className="editItem">
                             <Icon link name='pencil alternate' />
                         </NavLink>
                         <Popup trigger={<button><Icon link name='trash alternate outline' /></button>} flowing hoverable>
@@ -91,7 +88,7 @@ class Items extends Component
                                     <p>
                                         Удалить {value.title} ?
                                     </p>
-                                    <Button color="red" onClick={(e) => {this.deleteItem(value.id, e)}}>Удалить</Button>
+                                    <Button className="deleteItem" color="red" onClick={(e) => {this.deleteItem(value.id, e)}}>Удалить</Button>
                                 </Grid.Column>
                             </Grid>
                         </Popup>
@@ -123,7 +120,7 @@ class Items extends Component
                             <Table.Row>
                                 <Table.HeaderCell />
                                 <Table.HeaderCell colSpan='5'>
-                                    <NavLink to="/item/create" activeClassName="SActivated">
+                                    <NavLink className="addNewPhone" to="/item/create" activeClassName="SActivated">
                                         <Button floated='right' icon labelPosition='left' primary size='small'>
                                             <Icon name='plus circle' /> Добавить товар
                                         </Button>

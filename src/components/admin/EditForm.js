@@ -148,7 +148,7 @@ class EditForm extends Component
             <Container>
                 <Header as='h2'>Редактирование продукта {item.id}</Header>
 
-                <FormUI>
+                <FormUI className="editPhoneForm">
                     <FormUI.Input name="title" label="Название" placeholder="Название" defaultValue={item.title}
                         error={(this.state.errors[0].status === true) ? true: null}
                         onChange={(e) => {this.fieldChange(e)}}
@@ -180,7 +180,7 @@ class EditForm extends Component
                     {(this.state.errors[4].status === true) ? (<span className="text-danger">{this.state.errors[4].message}</span>): null}
 
                     {this.setRedirect()}
-                    <Button disabled={!this.state.statusSaveBtn} onClick={this.state.statusSaveBtn ? this.saveItem : null} primary>Сохранить</Button>
+                    <Button className="editPhone" disabled={!this.state.statusSaveBtn} onClick={this.state.statusSaveBtn ? this.saveItem : null} primary>Сохранить</Button>
                 </FormUI>
             </Container>
         )
@@ -189,6 +189,7 @@ class EditForm extends Component
 
 const mapStateToProps = ({ phones }) => {
     return {
+        phones: phones.items,
         isLoading: phones.isLoading,
         isAddPhone: phones.isAddPhone
     }

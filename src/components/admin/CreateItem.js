@@ -148,7 +148,7 @@ class CreateItem extends Component
             <Container>
                 <Header as='h2'>Добавление нового продукта</Header>
 
-                <FormUI>
+                <FormUI className="createPhoneForm">
                     <FormUI.Input name="title" label="Название" placeholder="Название"
                                   error={(this.state.errors[0].status === true) ? true: null}
                                   onChange={(e) => {this.fieldChange(e)}}
@@ -180,7 +180,7 @@ class CreateItem extends Component
                     {(this.state.errors[4].status === true) ? (<span className="text-danger">{this.state.errors[4].message}</span>): null}
 
                     {this.setRedirect()}
-                    <Button disabled={!this.state.statusSaveBtn} onClick={this.state.statusSaveBtn ? this.saveItem : null} primary>Сохранить</Button>
+                    <Button className="savePhone" disabled={!this.state.statusSaveBtn} onClick={this.state.statusSaveBtn ? this.saveItem : null} primary>Сохранить</Button>
                 </FormUI>
             </Container>
         );
